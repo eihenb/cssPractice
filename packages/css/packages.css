@@ -14,9 +14,16 @@ ul {
 ul li {
     margin: 0;
 }
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 .header {
     width: 100%;
     background-color: #2ddf5c;
+    position: fixed;
+    z-index: 1;
     padding: 8px 16px;
 }
 .logo__brand {
@@ -109,20 +116,35 @@ ul li {
 }
 .main {
     padding: 32px 0;
-    text-align: center;
+    background: url(../../img/bgImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*position: fixed;*/
+    height: 100%;
+    width: 100%;
 }
 /*** Plans section ***/
 .plans {
-    width: 30%;
+    width: 80%;
     display: inline-block;
-    text-align: center;
+    text-align: left;
     border: 2px solid #3b6c21;
     padding: 50px;
-    margin: 10px;
+    margin: 15px 0;
+    position: relative;
 }
 .plans a {
     color: #000;
     text-decoration: none;
+}
+.plans__badge {
+    padding: 5px 30px;
+    background: #239d63;
+    color: white;
+    position: absolute;
+    box-shadow: #3b6c21 1px 1px 6px 3px;
+    right: -40px;
+    top: 20px;
 }
 .plans__titles {
     padding: 15px 0;
@@ -131,7 +153,7 @@ ul li {
 }
 .plans__subtitle {
     color: #265e2b;
-    padding: 15px 0;
+    padding: 0 0 15px 0;
 }
 .plans__txt {
     padding: 15px;
@@ -141,6 +163,16 @@ ul li {
 }
 .plans--plus {
     background: #93e09b;
+    border-left: none;
+}
+.plans--free {
+    background: #94c998;
+    float: right;
+    border-right: none;
+}
+.plans--premium {
+    background: #117040;
+    border-left: none;
 }
 .plans--plus .plans__subtitle {
     color: #888;
@@ -150,10 +182,4 @@ ul li {
 }
 .plans--premium .plans__subtitle {
     color: #c7c7c7;
-}
-.plans--free {
-    background: #94c998;
-}
-.plans--premium {
-    background: #117040;
 }
