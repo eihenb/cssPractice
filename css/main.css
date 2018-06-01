@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial;
+}
+.header {
+    width: 100%;
+    background-color: #2ddf5c;
+    padding: 8px 16px;
+}
+.logo__brand {
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    font-size: 18px;
+}
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+.header-logo__title {
+    margin: 0;
+    text-align: center;
+}
+.nav {
+    display: inline-block;
+    width: calc(100% - 60px);
+    text-align: right;
+    vertical-align: middle;
+}
+.nav__list {
+    list-style: none;
+    display: inline-block;
+}
+.nav__items {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.nav__links {
+    text-decoration: none;
+    padding: 10px 0;
+    margin: 0 10px;
+    color: rgb(112, 106, 108);
+    font-weight: bold;
+}
+.nav__links:hover,
+.nav__links:active {
+    color: white;
+    border-bottom: 1px solid rgb(212, 220, 221);
+}
+.nav__items--cta a {
+    color: white;
+    background: red;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.nav__items--cta a:hover {
+    color: red;
+    background: white;
+    border: none;
+}
+
+/** main styles **/
+.header-logo {
+    background: url("freedom.jpeg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 817px;
+}
+
+/** plans section **/
+.plans__item {
+    text-align: center;
+}
+.plans__price {
+    background: #5dffdc;
+    text-align: center;
+    padding: 16px;
+    margin: 8px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+.plans__title {
+    text-align: center;
+}
+h1,h2,h3 {
+    margin: 22px;
+}
+
+.plans__price-highlighted {
+    background: #19b84c;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0, 0.2);
+}
+.plans__annotation {
+    background: #fff;
+    color: #19b84c;
+    padding: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0, 0.2);
+    border-radius: 10px;
+}
+.plans__item {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+}
+.plans__btn {
+    background: #0e4f1f;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    margin-top: 15px;
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.plans__btn:hover {
+    color: red;
+    background: white;
+    border: none;
+    font-weight: bold;
+}
+.plan__title {
+    color: #939292;
+}
+.plan__price {
+    color: #9e9e9e;
+}
+.plans__price-highlighted {
+    width: 20%;
+}
+.plans__price-highlighted .plan__title {
+    color: #fff;
+}
+.plans__price-highlighted .plan__price {
+    color: #5d5d5d;
+}
