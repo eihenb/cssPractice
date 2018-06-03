@@ -43,7 +43,6 @@ ul li {
 .header-logo {
     background: url("freedom.jpeg") no-repeat;
     background-size: cover;
-    width: 100%;
     height: 817px;
 }
 .nav {
