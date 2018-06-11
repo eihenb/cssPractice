@@ -1,0 +1,41 @@
+/** Sticky Footer **/
+
+main {
+    min-height: calc(100vh - 70px);
+}
+.footer {
+    height: 50px;
+}
+
+#customer-2 {
+    text-align: right;
+}
+.testimonial {
+    margin-top: 3rem;
+}
+.testimonial__image-container {
+    /* display: inline-block;
+    width: 65%; */
+    max-width: 40rem;
+    vertical-align: middle;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.testimonial__image {
+    width: 100%;
+    vertical-align: middle;
+}
+.testimonial__name {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #EA5151;
+}
+.testimonial__subtitle, .testimonial__subtitle a  {
+    color: #CCCBCB;
+    font-size: 1.1rem;
+}
+.testimonial__subtitle a {
+    text-decoration: none;
+}
+.testimonial__text {
+    padding-left: 1.2rem;
+}

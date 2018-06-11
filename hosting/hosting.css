@@ -1,0 +1,96 @@
+main {
+    min-height: calc(100vh - 70px);
+}
+.footer {
+    height: 50px;
+}
+
+.signup-page__title {
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.signup-form label,
+.signup-form input,
+.signup-form select {
+    display: block;
+    margin: 1rem auto;
+    width: 100%;
+}
+.agree-terms {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+.button {
+    margin: auto;
+    display: block;
+}
+.signup-form label {
+    font-weight: bold;
+}
+.signup-form {
+    padding: 1rem;
+}
+.signup-form select,
+.signup-form input {
+    padding: .5rem;
+    border: 1px solid #ccc;
+    font: inherit;
+}
+.signup-form input[type="checkbox"]:checked {
+    background: #d8f3df;
+    border-color: #2ddf5c;
+}
+.signup-form input[type="checkbox"] {
+    border: 1px solid #ccc;
+    background: #fff;
+    width: 1rem;
+    height: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.signup-form select:focus,
+.signup-form input:focus{
+    outline: none;
+    background: #d8f3df;
+    border-color: #0e4f1f;
+
+}
+.signup-form input.invalid,
+.signup-form select.invalid,
+.signup-form :invalid {
+    border-color: red !important;
+    background: #faacac;
+}
+@media (min-width: 40rem) {
+  .signup-form {
+      margin: auto;
+      width: 25rem;
+  }
+}
+.button {
+    background: #003300;
+    border-radius: 1rem;
+    border: none;
+    padding: .5rem 1rem;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    font: inherit;
+    cursor: pointer;
+}
+.button:hover {
+    background: #fff;
+    border: 2px solid  #003300;
+    color:  #003300;
+    font-weight: bold;
+}
+.button:focus {
+    outline: none;
+}
+.agree-terms a {
+    color: #000;
+    text-decoration: none;
+}

@@ -1,0 +1,82 @@
+@media (min-width: 48rem) and (min-width: 60rem) {
+    .nav {
+        display: flex;
+    }
+    .plans__price {
+        width: 30%;
+        min-width: 15rem;
+        max-width: 22rem;
+    }
+    .features__list {
+        display: flex;
+    }
+    .features__item {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plans__price-highlighted,
+    .plans__annotation {
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0, 0.2);
+    }
+    .plans__price-highlighted {
+        margin: 0 1rem;
+    }
+    .plans__annotation {
+        min-width: 12rem;
+    }
+    .nav
+    .mobile-nav__item a {
+    font-size: 1.5rem;
+  }
+}
+
+
+/** customers sections queries **/
+
+@media (min-width: 40rem) {
+    .flex {
+        height: 1100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonial {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        max-width: 1500px;
+    }
+    #customer-1 {
+        margin-top: 9rem;
+    }
+    .testimonial__info {
+        max-width: 45%;
+    }
+   
+}
+
+/** packages sections queires **/
+
+@media (min-width: 40rem) {
+    .nav {
+        display: inline-block;
+    }
+    .main {
+        margin: 3rem auto;
+        max-width: 1500px;
+    }
+}
+
+@media (min-width: 1500px ) {
+    .plans--plus {
+        border-left: 1px solid #2f8845;
+    }
+    .plans--free {
+        border-right: 1px solid #2f8845;
+    }
+    .plans--premium {
+        border-left: 1px solid #2f8845;
+    }
+}
