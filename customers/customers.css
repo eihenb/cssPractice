@@ -14,15 +14,16 @@ main {
     margin-top: 3rem;
 }
 .testimonial__image-container {
-    /* display: inline-block;
-    width: 65%; */
     max-width: 40rem;
     vertical-align: middle;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    transform: skew(20deg);
+    overflow: hidden;
 }
 .testimonial__image {
     width: 100%;
     vertical-align: middle;
+    transform: skew(-20deg) scale(1.4);
 }
 .testimonial__name {
     font-size: 1.7rem;

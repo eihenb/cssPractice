@@ -1,3 +1,7 @@
+:root {
+    --green-color: #2ddf5c;
+    --red-color: #ff0b02;
+}
 * {
     box-sizing: border-box;
     padding: 0;
@@ -25,7 +29,7 @@ ul li {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #2ddf5c;
+    background-color: var(--green-color);
     padding: .5rem 1rem;
     z-index: 50;
 }
@@ -92,14 +96,14 @@ ul li {
 }
 .nav__items--cta a {
     color: white;
-    background: red;
+    background: var(--red-color);
     padding: .5rem 1rem;
     border-radius: 8px;
     transition: 0.3s;
 }
 .nav__items--cta a:hover,
 .mobile-nav__item a:hover {
-    color: red;
+    color: var(--red-color);
     background: white;
     border: none;
 }
@@ -177,17 +181,16 @@ ul li {
 }
 .modal__action:hover,
 .modal__action:action {
-    background: #2ddf5c;
-    border-color: #2ddf5c;
+    background: var(--green-color);
 }
 .modal__action--negative {
-    background: red;
-    border-color: red;
+    background: var(--red-color);
+    border-color: var(--red-color);
 }
 .modal__action--negative:hover,
 .modal__action--negative:active {
-    background: red;
-    border-color: red;
+    background: var(--red-color);
+    border-color: var(--red-color);
 }
 
 /** footer section **/

@@ -43,7 +43,8 @@
     text-align: left;
     border: 2px solid #3b6c21;
     padding: 3.1rem;
-    margin: 0.9rem 0;
+    margin: 2.9rem 0;
+    overflow: hidden;
     position: relative;
 }
 .plans a {
@@ -52,12 +53,16 @@
 }
 .plans__badge {
     padding: 0.3rem 1.8rem;
-    background: #239d63;
+    background: red;
     color: white;
     position: absolute;
     box-shadow: #3b6c21 1px 1px 6px 3px;
     right: -40px;
     top: 20px;
+    width: 23rem;
+    text-align: center;
+    transform: rotateZ(45deg) translateX(4.5rem) translateY(-1rem);
+    transform-origin: center center;
 }
 .plans__titles {
     padding: .9rem 0;
